@@ -26,6 +26,12 @@ article p{
     background-color: gray;
 }
 
-#rose {
-    color: pink;
+article:last-child p{
+    background-color: pink;
+}
+
+article:nth-child(3) h3{
+    color: green;
+    text-align: right;
+    text-decoration: underline;
 }
