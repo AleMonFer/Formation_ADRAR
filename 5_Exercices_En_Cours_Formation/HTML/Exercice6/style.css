@@ -6,6 +6,7 @@ h1 {
 }
 
 h3 {
+    font-size: 35px;
     color: blue;
     font-weight: bold;
 }
@@ -19,18 +20,18 @@ em {
     font-size: 20px;
     font-style: normal;
     text-decoration: underline;
-    color: orange; 
+    color: orange;
 }
 
-article p{
+article p {
     background-color: gray;
 }
 
-article:last-child p{
+article:last-child p {
     background-color: pink;
 }
 
-article:nth-child(3) h3{
+article:nth-child(3) h3 {
     color: green;
     text-align: right;
     text-decoration: underline;
