@@ -1,5 +1,5 @@
 h1 {
-    color: red;    
+    color: red;
 }
 
 a {
@@ -10,19 +10,13 @@ a {
     background-color: grey;
 }
 
-div + div {
+div+div {
     text-align: right;
 }
 
-div + div p {
+div+div p {
     font-size: 2em;
 }
-
-
-
-
-
-
 
 /*
 div:not(#contenu){
