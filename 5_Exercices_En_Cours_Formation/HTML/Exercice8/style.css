@@ -1,0 +1,8 @@
+table {
+    border: dotted 5px;
+}
+
+td {
+    border-bottom: solid 1px;
+    border-right: solid 1px;
+}
