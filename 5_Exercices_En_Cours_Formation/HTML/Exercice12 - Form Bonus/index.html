@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <title>Exercice 12 - Forms</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <form action="" method="post">
+        <fieldset>
+            <legend>Info Personelles</legend>
+            <label for="fname">Prénom:</label>
+            <input id="fname" type="text" minlength="2" maxlength="20" placeholder="Ex: Jacques" name="firstName">
+            <br>
+            <label for="lname">Nom:</label>
+            <input id="lname" type="text" minlength="2" maxlength="20" placeholder="Ex: Dubois" name="lastName">
+            <br>
+            <label for="mail">E-mail</label>
+            <input id="mail" type="email" placeholder="Ex: monMail@FAI.com" name="email">
+            <br>
+            <label for="pnumber">Numéro</label>
+            <input id="pnumber" type="tel" placeholder="Ex: 00.11.22.33.44" name="phoneNumber">
+            <br>
+            <label for="password">Mot de Passe:</label>
+            <input id="password" type="password" minlength="8" maxlength="30" placeholder="Ex: P@assword"
+                name="passCode">
+            <br>
+            <label for="age">Age:</label>
+            <input id="age" type="password" placeholder="Ex: 15" name="nAge">
+            <br>
+            <label for="comment">Laissez un commentaire:</label>
+            <br>
+            <textarea id="comment" placeholder="J'adore ce que vous faites !" cols="70" rows="10"
+                name="bigComment"></textarea>
+            <br>
+            <label for="Date">Date de mon commentaire</label>
+            <input type="date" id="Date" name="commentDate">
+            <br>
+            <label for="file">Ma photo:</label>
+            <input type="file" id="file" accept=".jpg, .png, .gif" name="insertFile">
+        </fieldset>
+        <fieldset>
+            <legend>Vous préférez:</legend>
+            <input type="checkbox" id="checkbox1" name="check1" checked>
+            <label for="checkbox1">Le HTML</label>
+            <br>
+            <input type="checkbox" id="checkbox2" name="check2">
+            <label for="checkbox2">Le CSS</label>
+            <br>
+            <input type="checkbox" id="checkbox3" name="check3">
+            <label for="checkbox3">Le JavaScript</label>
+            <br>
+            <input type="checkbox" id="checkbox4" name="check4">
+            <label for="checkbox4">Ne rein faire</label>
+        </fieldset>
+        <fieldset>
+            <legend>Fin du formulaire</legend>
+            <label for="veaa">Vous en avez assez?</label>
+            <select name="answerVEAA" id="veaa">
+                <optgroup label="Team Pas Encore">
+                    <option value="1" selected>j'en veux plus</option>
+                    <option value="2">C'est Super !</option>
+                </optgroup>
+                <optgroup label="Team Oula">
+                    <option value="3">J'en ai marre</option>
+                    <option value="4">Pitié !</option>
+                </optgroup>
+            </select>
+            <br>
+            <input type="submit" value="Envoyer">
+            <input type="reset" value="Reset">
+        </fieldset>
+    </form>
+</body>
+
+</html>
