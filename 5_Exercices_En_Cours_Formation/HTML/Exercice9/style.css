@@ -4,6 +4,7 @@ caption {
 }
 
 table {
+    text-align: center;
     border-collapse: collapse;
     border: double purple 5px;
 }
