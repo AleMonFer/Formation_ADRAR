@@ -27,7 +27,7 @@ article p {
     background-color: gray;
 }
 
-article:last-child p {
+article:nth-child(4) p {
     background-color: pink;
 }
 
