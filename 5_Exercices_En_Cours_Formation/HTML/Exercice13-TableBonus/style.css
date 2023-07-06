@@ -1,19 +1,11 @@
-caption {
-    color: purple;
-    font-weight: bold;
+ul li:nth-of-type(even){
+    color: blue;
 }
 
-table {
-    text-align: center;
-    border-collapse: collapse;
-    border: double purple 5px;
+ul:hover li:nth-of-type(even) {
+    color: black;
 }
 
-tr:first-child {
-    background-color:lightskyblue ;
-}
-
-td, th {
-    border-bottom: solid 2px;
-    border-right: solid 2px;
+ul:hover li:nth-of-type(odd) {
+    color: blue;
 }

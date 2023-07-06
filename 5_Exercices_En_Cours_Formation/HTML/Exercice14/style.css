@@ -1,0 +1,17 @@
+p {
+    background-color: lightgray;
+    border: solid green 5px;
+}
+
+p:first-child {
+    height: 100px;
+}
+
+p:nth-child(2) {
+    width: 50%;
+}
+
+p:last-child {
+    width: 200px;
+    height: 200px;
+}
