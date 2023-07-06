@@ -1,0 +1,26 @@
+table:first-child caption {
+    color: purple;
+    font-weight: bold;
+}
+
+table{
+    border-collapse: collapse;
+}
+
+table:first-child {
+    text-align: center;
+    border: double purple 5px;
+}
+
+table:last-child{
+    border: solid black 2px;
+}
+
+table:first-child tr:first-child {
+    background-color:lightskyblue ;
+}
+
+td, th {
+    border-bottom: solid 2px;
+    border-right: solid 2px;
+}
