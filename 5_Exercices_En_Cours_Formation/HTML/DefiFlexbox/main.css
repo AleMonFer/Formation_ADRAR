@@ -1,5 +1,5 @@
 .dice{
-    /*display: flex;*/
+    display: flex;
     border: 2px red solid;
     border-radius: 25px;
     background-color: lightgray;
@@ -14,10 +14,10 @@
     border: 1px red solid;
     background-color: red;
     border-radius: 10px;
-    /*align-self: center;*/
+    align-self: center;
 }
 
-/* 
+
 #d1, #d2, #d3, #d5{
     justify-content: space-evenly;
 }
@@ -32,4 +32,3 @@
     justify-content: space-around;
     height: 100%;
 }
-*/
