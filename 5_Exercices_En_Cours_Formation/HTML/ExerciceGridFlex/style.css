@@ -1,0 +1,147 @@
+body {
+    margin: 0 25% 0 25%;
+    padding: 0;
+}
+
+@media screen and (max-width: 998px) {
+    body {
+        margin: 0;
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 1439px) {
+    body {
+        margin: 0;
+        padding: 0;
+    }
+}
+
+
+main {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(5, auto);
+}
+
+h1,
+h2,
+h3,
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0.9em;
+}
+
+h1,
+h3 {
+    color: #1F497D;
+    text-align: center;
+    line-height: 0;
+}
+
+h1 {
+    font-size: 4em;
+    font-weight: bold;
+}
+
+h2,
+hr {
+    margin: 0;
+    padding: 0;
+}
+
+h3 {
+    font-size: 1.5em;
+    font-weight: lighter;
+    padding-bottom: 0.5em;
+}
+
+
+ul {
+    list-style: none;
+    list-style-position: inside;
+    font-style: italic;
+    padding: 0;
+    font-size: 1em;
+}
+
+.contact ul li,
+.competences ul li {
+    padding: 3%;
+}
+
+.competences ul li {
+    font-weight: bold;
+}
+
+.titre,
+.competences {
+    background-color: #F2F2F2;
+}
+
+.contact,
+.description,
+.hobbies {
+    background-color: #1F497D;
+}
+
+.contact h2,
+.hobbies h2 {
+    border-bottom: solid white 2px;
+    padding-bottom: 3%;
+}
+
+.competences h2 {
+    border-bottom: solid #1F497D 2px;
+    padding-bottom: 3%;
+}
+
+.titre {
+    grid-column: 12 span;
+}
+
+.description,
+.expro {
+    grid-column: span 8;
+}
+
+.expro {
+    grid-row: span 3;
+    padding: 2em;
+}
+
+.pImg,
+.contact,
+.competences,
+.hobbies {
+    grid-column: span 4;
+    padding: 1.5em;
+}
+
+.description {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.description p {
+    color: white;
+}
+
+.pImg {
+    display: flex;
+    justify-content: center;
+}
+
+.contact ul li,
+.hobbies ul li,
+.contact h2,
+.hobbies h2 {
+    color: white;
+}
+
+.competences ul li,
+.competences h2,
+.expro h2 {
+    color: #1F497D;
+}
