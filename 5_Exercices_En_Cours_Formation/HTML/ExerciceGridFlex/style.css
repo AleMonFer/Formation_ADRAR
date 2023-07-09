@@ -20,7 +20,7 @@ body {
 @font-face {
     font-family: Assistant;
     src: url(Assistant-VariableFont_wght.ttf);
-  }
+}
 
 
 
@@ -37,7 +37,7 @@ h4,
 h5,
 p {
     font-family: Assistant, Arial, Helvetica, sans-serif;
-    margin: 0.9em;
+    margin: 1em;
 }
 
 h1,
@@ -54,6 +54,7 @@ h1 {
 
 h2,
 hr {
+    font-size: 1.75em;
     margin: 0;
     padding: 0;
 }
@@ -64,6 +65,9 @@ h3 {
     padding-bottom: 0.4em;
 }
 
+h4, h5, .textEx p {
+    margin: 0 4% 0 1%;
+}
 
 ul {
     list-style: none;
@@ -73,10 +77,10 @@ ul {
     font-size: 1em;
 }
 
-.hobbies ul{
-    display: flex; 
-    flex-direction: row; 
-    flex-wrap: wrap; 
+.hobbies ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-around;
 }
 
@@ -96,7 +100,8 @@ ul {
 
 .contact,
 .description,
-.hobbies {
+.hobbies,
+.circle {
     background-color: #1F497D;
 }
 
@@ -139,10 +144,6 @@ ul {
     justify-content: space-evenly;
 }
 
-.description p {
-    color: white;
-}
-
 .pImg {
     display: flex;
     justify-content: center;
@@ -151,7 +152,9 @@ ul {
 .contact ul li,
 .hobbies ul li,
 .contact h2,
-.hobbies h2 {
+.hobbies h2,
+.description p,
+.circle {
     color: white;
 }
 
@@ -161,9 +164,22 @@ ul {
     color: #1F497D;
 }
 
-.circle {
-    border-radius: 50%;
-    background-color: #1F497D;
-    width: 15%;
-    height: 15%;
+.expGroup {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: 20% 80%;
+    justify-items: end;
+    margin: 5% 0 5% 0;
+    grid-gap:15px
 }
+
+.circle {
+    display: flex;
+    flex-direction: column;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    justify-content: center;
+}
+
