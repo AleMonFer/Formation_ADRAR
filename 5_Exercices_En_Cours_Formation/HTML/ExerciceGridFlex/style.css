@@ -1,5 +1,5 @@
 body {
-    margin: 0 25% 0 25%;
+    margin: 0 25% 0 25%; /* margin: 0 auto; */
     padding: 0;
 }
 
@@ -19,7 +19,7 @@ body {
 
 @font-face {
     font-family: Assistant;
-    src: url(Assistant-VariableFont_wght.ttf);
+    src: url(../ExerciceGridFlex/Assistant-VariableFont_wght.ttf);
 }
 
 
@@ -65,7 +65,9 @@ h3 {
     padding-bottom: 0.4em;
 }
 
-h4, h5, .textEx p {
+h4,
+h5,
+.textEx p {
     margin: 0 4% 0 1%;
 }
 
@@ -170,7 +172,7 @@ ul {
     grid-template-columns: 20% 80%;
     justify-items: end;
     margin: 5% 0 5% 0;
-    grid-gap:15px
+    grid-gap: 15px
 }
 
 .circle {
@@ -183,3 +185,22 @@ ul {
     justify-content: center;
 }
 
+/*
+    ----------------Correction----------------
+    ------------------------------------------
+
+        Better Comments and Organization
+
+        Use Comments for Organization
+
+        Use the minimum ammount of rows
+
+        Not be Afraid to separate the same selector/class/id for the sake of organization
+
+        Less Code lines
+
+        Always use a Reset CSS ( * { margin:0; padding:0;})
+
+        Grid in body
+
+*/
