@@ -10,18 +10,20 @@
 /*----General----*/
 
 body {
-    margin: 0 auto;
-    padding: 0 auto;
     display: grid;
-    grid-template: repeat(3, auto) / repeat(12, 1fr);
+    grid-template: repeat(4, auto) / repeat(12, 1fr);
 }
 
-main,
-section,
+main, section:last-child {
+    display: grid;
+    grid-template: repeat(2, auto) / repeat(2, auto);
+}
+
 header ul,
 nav,
 form,
-form div {
+form div,
+section:first-child {
     display: flex;
 }
 
@@ -35,24 +37,30 @@ legend {
     font-weight: bold;
 }
 
-header p,
+#stickymessage,
 header ul li {
     font-size: 1.3em;
     text-align: center;
+}
+
+#stickymessage {
+    position: sticky;
+    top: 0px;
 }
 
 /*----Grid Organization----*/
 
 header,
 main,
-footer {
+footer,
+p {
     grid-column: 1 /span 12;
 }
 
 /*----Flex Organization----*/
 
-section,
-form div {
+form div,
+section:first-child {
     flex-direction: column;
 }
 
@@ -65,7 +73,8 @@ nav div:last-child {
     text-align: center;
 }
 
-form, form div {
+form,
+form div {
     justify-content: center;
 }
 
@@ -80,7 +89,9 @@ header ul li {
     margin-right: 50px;
 }
 
-header p, h2, form {
+#stickymessage,
+h2,
+form {
     padding: 0.5% 1% 0.5% 1%;
 }
 
@@ -104,8 +115,12 @@ section:last-child img {
     width: 30%;
 }
 
-form div {
-    width: 20%;     
+form div:first-child {
+    width: 20%;
+}
+
+form div:last-child {
+    width: 60%;
 }
 
 /*----Design----*/
@@ -118,11 +133,11 @@ header {
 h1,
 h2,
 form legend,
-header p {
+#stickymessage {
     color: #7c925e;
 }
 
-header p,
+#stickymessage,
 footer,
 section:first-child p {
     background-color: #ebe2d7;
