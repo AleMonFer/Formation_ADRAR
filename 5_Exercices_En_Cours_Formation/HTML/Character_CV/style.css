@@ -125,6 +125,11 @@ section:last-child video {
         width: 90%;
 }
 
+article p, .over img {
+        margin-top: 5%;
+        margin-left: 35%;
+}
+
 
 h2,
 p {
@@ -132,7 +137,7 @@ p {
         color: white;
 }
 
-h2 {    
+h2 {
         margin-top: 5%;
         margin-left: 35%;
 }
