@@ -79,9 +79,10 @@ header {
 
 main {
         display: flex;
-        border-top: solid 10px #A3C855;
         grid-column: span 12;
         padding: 0 5%;
+        margin-top: -225px;
+        position: relative;
 }
 
 main h1 {
@@ -99,8 +100,7 @@ main section {
 }
 
 .lgBackground {
-        margin-top: -225px;
-        position: relative;
+        border-top: solid 10px #A3C855;
         background-color: black;
 }
 
@@ -133,7 +133,8 @@ p {
 
 h2,
 article:nth-child(4) p,
-article:nth-child(5) p {
+article:nth-child(5) p,
+article:nth-child(6) p {
         margin-left: 5%;
 }
 
@@ -163,7 +164,7 @@ div img {
 
         to {
                 transform: rotate3d(1, 1, 0, 360deg);
-                moz-transform: rotate3d(1, 1, 0,360deg);
+                moz-transform: rotate3d(1, 1, 0, 360deg);
                 ms-transform: rotate3d(1, 1, 0, 360deg);
         }
 }
@@ -178,13 +179,7 @@ div img {
         }
 }
 
-.imgModif {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-}
-
-.turnaround {
+.spin {
         animation-name: spin;
         animation-timing-function: linear;
         animation-iteration-count: infinite;
@@ -196,6 +191,39 @@ div img {
 }
 
 
+.bar{
+        margin: 5%;
+}
+
+.bar>li {
+        color: white;
+        position: relative;
+}
+
+.bar>li:before {
+        content: '\25CF';
+        margin-right: 10px;
+        font-size: 50px;
+}
+
+.bar>li:after {
+        position: absolute;
+        left: 0;
+        top: 0;
+        content: '';
+        border-left: 2px solid white;
+        margin-left: 13px;
+        height: 100%;
+}
+
+.bar>li:first-of-type:after {
+        top: 50%;
+}
+
+.bar>li:last-of-type:after {
+        top: -50%;
+}
+
 /*---------------------
 -----------------------
        FOOTER
@@ -203,3 +231,11 @@ div img {
 ---------------------*/
 
 /*----General----*/
+
+footer{
+        grid-column: span 12;
+}
+
+footer h2{
+        text-align: center;
+}
