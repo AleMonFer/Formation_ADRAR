@@ -79,10 +79,9 @@ header {
 
 main {
         display: flex;
+        border-top: solid 10px #A3C855;
         grid-column: span 12;
         padding: 0 5%;
-        margin-top: -225px;
-        position: relative;
 }
 
 main h1 {
@@ -100,11 +99,12 @@ main section {
 }
 
 .lgBackground {
-        border-top: solid 10px #A3C855;
+        top: -225px;
+        position: relative;
         background-color: black;
 }
 
-section article:nth-child(3) img {
+section:first-child img {
         margin: 3%;
         width: 30%;
         order: -1;
@@ -112,117 +112,41 @@ section article:nth-child(3) img {
 
 .apropos {
         display: flex;
-        align-items: center;
 }
 
 section:last-child {
         display: flex;
         flex-direction: column;
+        align-items: center;
 }
 
 section:last-child video {
-        margin: 5%;
+        margin-top: 4%;
         width: 90%;
 }
 
+article p{
+        margin-top: 5%;
+        margin-left: 35%;
+}
+
+.over img{
+        
+}
+
+
 h2,
 p {
-        margin: 2%;
+        margin: 2% 2% 2% 0;
         color: white;
 }
 
-h2,
-article:nth-child(4) p,
-article:nth-child(5) p,
-article:nth-child(6) p {
-        margin-left: 5%;
-}
-
-div img {
-        width: 100%;
-}
-
-.hoverchange {
-        background-image: url(img/yuichiro-hyakuya-anime.gif);
-        background-repeat: no-repeat;
-        background-size: cover;
-        margin: 5%;
-}
-
-.hoverchange img:hover {
-        opacity: 0%;
-        transition-duration: 1s;
-        transition-delay: 0.5s;
-}
-
-@keyframes spin {
-        from {
-                transform: rotate3d(1, 1, 0, 0deg);
-                moz-transform: rotate3d(1, 1, 0, 0deg);
-                ms-transform: rotate3d(1, 1, 0, 0deg);
-        }
-
-        to {
-                transform: rotate3d(1, 1, 0, 360deg);
-                moz-transform: rotate3d(1, 1, 0, 360deg);
-                ms-transform: rotate3d(1, 1, 0, 360deg);
-        }
-}
-
-@-webkit-keyframes spin {
-        from {
-                -webkit-transform: rotate3d(1, 1, 0, 0deg);
-        }
-
-        to {
-                -webkit-transform: rotate3d(1, 1, 0, 360deg);
-        }
-}
-
-.spin {
-        animation-name: spin;
-        animation-timing-function: linear;
-        animation-iteration-count: infinite;
-        animation-duration: 5s;
-        -webkit-animation-name: spin;
-        -webkit-animation-timing-function: linear;
-        -webkit-animation-iteration-count: infinite;
-        -webkit-animation-duration: 5s;
+h2 {
+        margin-top: 5%;
+        margin-left: 35%;
 }
 
 
-.bar{
-        margin: 5%;
-}
-
-.bar>li {
-        color: white;
-        position: relative;
-}
-
-.bar>li:before {
-        content: '\25CF';
-        margin-right: 10px;
-        font-size: 50px;
-}
-
-.bar>li:after {
-        position: absolute;
-        left: 0;
-        top: 0;
-        content: '';
-        border-left: 2px solid white;
-        margin-left: 13px;
-        height: 100%;
-}
-
-.bar>li:first-of-type:after {
-        top: 50%;
-}
-
-.bar>li:last-of-type:after {
-        top: -50%;
-}
 
 /*---------------------
 -----------------------
@@ -231,52 +155,3 @@ div img {
 ---------------------*/
 
 /*----General----*/
-
-footer{
-        grid-column: span 12;
-}
-
-footer article{
-        display: flex;
-        justify-content: space-evenly;
-        align-items: center;
-}
-
-footer article div{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-}
-
-footer img {
-        width: 15%;
-        background-color: #A3C855;
-}
-
-footer h2{
-        margin: 2% 0%;
-        text-align: center;
-}
-
-@media only screen and (max-width: 1180px) {
-        .blackT{
-                visibility: hidden;
-        }
-
-        main{
-                flex-direction: column;
-        }
-}
-
-@media only screen and (max-width: 610px) {
-        .bar>li:before {
-                font-size: 10px;
-        }
-        .bar>li:after {
-                margin-left: 2px;
-        }
-        .bar li{
-                font-size: 0.9em;
-        }
-}
