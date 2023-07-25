@@ -17,7 +17,6 @@ console.log("----------IM JUST SEPARATING STUFF----------")
 // Écrire une fonction qui prend en entrée un tableau et qui retourne le minimum de ce tableau.
 // Écrire une fonction qui prend en entrée un tableau et qui retourne le maximum de ce tableau.
 
-function simpleIf()
 
 function tabMin(array){
     if(array[0] <= array[1] && array[0] <= array[2]){
