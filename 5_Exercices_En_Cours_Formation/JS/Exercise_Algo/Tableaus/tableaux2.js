@@ -1,52 +1,79 @@
 // Écrire une fonction qui prend un tableau en entrée et affiche le dernier élément de ce tableau.
 // Écrire une fonction qui prend un tableau en entrée et retourne le dernier élément de ce tableau.
 
-function dernierElement(array){
+function dernierElement(array) {
     console.log(array.pop());
 }
 
 dernierElement([21, 44, 33]);
 
-function dernierElement2(array){
+function dernierElement2(array) {
     return array.pop();
 }
 
 console.log(dernierElement2([21, 44, 33]));
 
-console.log("----------IM JUST SEPARATING STUFF----------")
+
 // Écrire une fonction qui prend en entrée un tableau et qui retourne le minimum de ce tableau.
 // Écrire une fonction qui prend en entrée un tableau et qui retourne le maximum de ce tableau.
 
+console.log("----------IM JUST SEPARATING STUFF----------");
 
-function tabMin(array){
-    if(array[0] <= array[1] && array[0] <= array[2]){
+function tabMin(array) {
+    if (array[0] <= array[1] && array[0] <= array[2]) {
         return array[0];
-    } else if(array[1] <= array[2]){
+    } else if (array[1] <= array[2]) {
         return array[1];
     } else {
         return array[2];
     }
 }
 
-console.log(tabMin([13, 45 ,7]));
+console.log(tabMin([13, 45, 7]));
 
-function tabMax(array){
-    if(array[0] >= array[1] && array[0] >= array[2]){
+function tabMax(array) {
+    if (array[0] >= array[1] && array[0] >= array[2]) {
         return array[0];
-    } else if(array[1] >= array[2]){
+    } else if (array[1] >= array[2]) {
         return array[1];
     } else {
         return array[2];
     }
 }
 
-console.log(tabMax([13, 45 ,7]));
+console.log(tabMax([13, 45, 7]));
 
 // [Plus difficile - bonus] Écrire une fonction qui prend en entrée un tableau de nombres positifs et qui retourne la deuxième plus grande valeur du tableau.
 
 // Écrire une fonction qui prend en entrée un tableau et un nombre et qui retourne le nombre de fois que ce nombre apparaît dans le tableau.
 
+console.log("----------IM JUST SEPARATING STUFF----------");
+
+function numberCounter(array, n) {
+    let counter = 0;
+    for (let i = 0; i < array.length; i++) {
+        if (array[i] == n) {
+            counter++;
+        }
+    }
+    return counter;
+}
+
+console.log(numberCounter([22, 22, 22, 23, 24, 2, 4, 5, 10], 22));
+
 // Écrire une fonction qui prend en entrée un tableau et un nombre et qui retourne true si le nombre existe dans le tableau, false sinon.
+
+function isThisYourNumber(array, n) {
+    for (let i = 0; i < array.length; i++) {
+        if (array[i] == n) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+}
+
+console.log(isThisYourNumber([22, 22, 22, 23, 24, 2, 4, 5, 10], 22));
 
 // [Bonus] Suite de l'exo : on **sait** que le tableau reçu est trié (on ne le vérifie pas). Comment exploiter cette information pour améliorer la recherche d'un élément ?
 
