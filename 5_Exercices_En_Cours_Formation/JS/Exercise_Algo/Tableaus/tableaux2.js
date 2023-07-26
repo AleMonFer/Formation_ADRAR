@@ -21,32 +21,63 @@ console.log("----------IM JUST SEPARATING STUFF----------");
 
 function valMin(array) {
 
-    let result = array[0];
+    let biggestN = array[0];
 
     for (let i = 1; i < array.length; i++) {
-        if (result > array[i]) {   
-            result = array[i];
+        if (array[i] < biggestN)   {   
+            biggestN = array[i];
         }
     }
-    return result;
+    return biggestN;
 }
 
 console.log(valMin([13, 45, 7]));
 
 function valMax(array) {
-    let result = array[0];
+    let biggestN = array[0];
 
     for (let i = 1; i < array.length; i++) {
-        if (result < array[i]) {
-            result = array[i];
+        if (array[i] > biggestN) {
+            biggestN = array[i];
         }
     }
-    return result;
+    return biggestN;
 }
 
 console.log(valMax([13, 45, 7]));
 
 // [Plus difficile - bonus] Écrire une fonction qui prend en entrée un tableau de nombres positifs et qui retourne la deuxième plus grande valeur du tableau.
+
+console.log("----------IM JUST SEPARATING STUFF----------");
+
+function valSecondMax(array){
+
+    for(let i  = 0; i < array.length; i++){
+        if(array[i] < 0){
+            array[i] *= -1;
+        }
+    }
+
+    let biggestN = array[0];
+
+    for (let i = 1; i < array.length; i++) {
+        if (array[i] > biggestN) {
+            biggestN = array[i];
+        }
+    }
+
+    let result = array[0];
+
+    for (let i = 1; i < array.length; i++) {
+        if (array[i] > result && array[i] < biggestN) {
+            result = array[i];
+        }
+    }
+    
+    return result;
+}
+
+console.log(valSecondMax([2, 45, -25, 35, -55, 78, 54 ,-75]));
 
 // Écrire une fonction qui prend en entrée un tableau et un nombre et qui retourne le nombre de fois que ce nombre apparaît dans le tableau.
 
@@ -89,22 +120,44 @@ console.log("----------IM JUST SEPARATING STUFF----------");
 function createArray(n1, n2){
     let array = [];
 
-    for(let i = n1; i <= n2; i + n1){
+    for(let i = n1; i <= n2; i+=n1){
         array.push(i);
     }
-
     return array;
 }
 
 let oneTo4Seven = createArray(1, 7777);
-console.log(oneTo4Seven[0]);
+console.log(oneTo4Seven);
 
 console.log("----------IM JUST SEPARATING STUFF----------");
 
 // Créer un tableau qui contient [10,20,30,...,77770].
 
+let tenByTen = createArray(10, 77770);
+console.log(tenByTen);
+
+console.log("----------IM JUST SEPARATING STUFF----------");
 
 // En se servant du tableau précédent, créer un tableau qui contient [5,10,15,...,38885].
 
+for(let i  = 0; i < tenByTen.length; i++){
+    tenByTen[i] /= 2 ;
+}
+
+console.log(tenByTen);
+
+console.log("----------IM JUST SEPARATING STUFF----------");
+
 // Écrire une fonction qui prend un tableau en entrée et qui en supprime les dernières valeurs, tant qu'elles sont inférieures à 50.
-// console.log(leNomDeVotreFonction([1,45,88,54,23,-100,12]); // doit afficher [1,45,88,54]
+
+function popLess50 (array){
+    for(let i = array.length-1; i > 0; i--){
+        if(array[i] < 50){
+            array.pop();
+        } else {
+            return array;
+        }
+    }
+}
+
+console.log(popLess50([1,45,88,54,23,-100,12])); // doit afficher [1,45,88,54]
