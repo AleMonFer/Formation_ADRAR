@@ -20,24 +20,24 @@ console.log(dernierElement2([21, 44, 33]));
 console.log("----------IM JUST SEPARATING STUFF----------");
 
 function tabMin(array) {
-    if (array[0] <= array[1] && array[0] <= array[2]) {
-        return array[0];
-    } else if (array[1] <= array[2]) {
-        return array[1];
-    } else {
-        return array[2];
+    let result = array[0];
+    for(let i  = 1; i < array.lenght; i++){
+        if(array[i] < result){
+            result = array[i];
+        }
+        return result;
     }
 }
 
 console.log(tabMin([13, 45, 7]));
 
 function tabMax(array) {
-    if (array[0] >= array[1] && array[0] >= array[2]) {
-        return array[0];
-    } else if (array[1] >= array[2]) {
-        return array[1];
-    } else {
-        return array[2];
+    let result = array[0];
+    for(let i  = 1; i < array.lenght; i++){
+        if(array[i] > result){
+            result = array[i];
+        }
+        return result;
     }
 }
 
