@@ -70,7 +70,7 @@ function valSecondMax(array){
     // }
 
     for (let i = 0; i < array.length; i++) {
-        if(array[i] > n1 && array[i] > n2) {
+        if(array[i] > n1) {
             n2 = n1;
             n1 = array[i];
         }else if(array[i] > n2){
@@ -81,7 +81,7 @@ function valSecondMax(array){
     return n2;
 }
 
-console.log(valSecondMax([2, 67, 45, 35, 53, 55, 3, 67, 59]));
+console.log(valSecondMax([2, 67, 45, 35, 53, 55, 3, 67, 67, 89, 59]));
 
 // Écrire une fonction qui prend en entrée un tableau et un nombre et qui retourne le nombre de fois que ce nombre apparaît dans le tableau.
 
