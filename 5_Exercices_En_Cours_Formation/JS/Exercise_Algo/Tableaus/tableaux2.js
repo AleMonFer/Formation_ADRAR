@@ -21,27 +21,27 @@ console.log("----------IM JUST SEPARATING STUFF----------");
 
 function valMin(array) {
 
-    let biggestN = array[0];
+    let result = array[0];
 
     for (let i = 1; i < array.length; i++) {
-        if (array[i] < biggestN)   {   
-            biggestN = array[i];
+        if (array[i] < result)   {   
+            result = array[i];
         }
     }
-    return biggestN;
+    return result;
 }
 
 console.log(valMin([13, 45, 7]));
 
 function valMax(array) {
-    let biggestN = array[0];
+    let result = array[0];
 
     for (let i = 1; i < array.length; i++) {
-        if (array[i] > biggestN) {
-            biggestN = array[i];
+        if (array[i] > result) {
+            result = array[i];
         }
     }
-    return biggestN;
+    return result;
 }
 
 console.log(valMax([13, 45, 7]));
@@ -51,12 +51,6 @@ console.log(valMax([13, 45, 7]));
 console.log("----------IM JUST SEPARATING STUFF----------");
 
 function valSecondMax(array){
-
-    for(let i  = 0; i < array.length; i++){
-        if(array[i] < 0){
-            array[i] *= -1;
-        }
-    }
 
     let biggestN = array[0];
 
@@ -77,7 +71,7 @@ function valSecondMax(array){
     return result;
 }
 
-console.log(valSecondMax([2, 45, -25, 35, -55, 78, 54 ,-75]));
+console.log(valSecondMax([2, 45, 35, 78, 54]));
 
 // Écrire une fonction qui prend en entrée un tableau et un nombre et qui retourne le nombre de fois que ce nombre apparaît dans le tableau.
 
@@ -103,13 +97,12 @@ function isThisYourNumber(array, n) {
     for (let i = 0; i < array.length; i++) {
         if (array[i] == n) {
             return true;
-        } else {
-            return false;
         }
     }
+    return false;
 }
 
-console.log(isThisYourNumber([22, 22, 22, 23, 24, 2, 4, 5, 10], 22));
+console.log(isThisYourNumber([22, 22, 22, 23, 24, 2, 4, 5, 10], 20));
 
 // [Bonus] Suite de l'exo : on **sait** que le tableau reçu est trié (on ne le vérifie pas). Comment exploiter cette information pour améliorer la recherche d'un élément ?
 
@@ -139,12 +132,12 @@ console.log(tenByTen);
 console.log("----------IM JUST SEPARATING STUFF----------");
 
 // En se servant du tableau précédent, créer un tableau qui contient [5,10,15,...,38885].
-
+let fiveByfive = [];
 for(let i  = 0; i < tenByTen.length; i++){
-    tenByTen[i] /= 2 ;
+    fiveByfive.push(tenByTen[i] / 2);
 }
 
-console.log(tenByTen);
+console.log(fiveByfive);
 
 console.log("----------IM JUST SEPARATING STUFF----------");
 
