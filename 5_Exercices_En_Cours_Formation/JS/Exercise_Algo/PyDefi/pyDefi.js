@@ -52,3 +52,32 @@ function mesPommes(n){
 }
 
 console.log(mesPommes(50));
+
+console.log("Exercise 5 PD - He's trying to say something! ");
+
+// let str = "NNEEESOOEES"
+// console.log(str.length);
+
+// for(let i = 0; i < str.length; i++){
+//     if(str.charAt(i) == "N"){
+        
+//     } else if(str.charAt(i) == "E"){
+        
+//     } else if(str.charAt(i) == "S"){
+        
+//     } else if(str.charAt(i) == "O"){
+        
+//     }
+// }
+
+console.log("Exercise 6 PD - Hercule's 10th job ");
+
+for(let b = 1; b <= 1000 ; b++ ){ 
+    for(let r = b+1; r <= 1000 ; r++ ){
+        for(let n = r+1; n <= 1000; n++){
+            if( b+r+n < 1000 && b*r*n == 777*(b+r+n) && n < 2*b){
+                console.log(b, r, n);
+            }
+        }
+    }
+}

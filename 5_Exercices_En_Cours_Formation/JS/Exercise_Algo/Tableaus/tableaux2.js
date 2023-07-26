@@ -48,30 +48,40 @@ console.log(valMax([13, 45, 7]));
 
 // [Plus difficile - bonus] Écrire une fonction qui prend en entrée un tableau de nombres positifs et qui retourne la deuxième plus grande valeur du tableau.
 
-console.log("----------IM JUST SEPARATING STUFF----------");
+console.log("----------valSecondMax----------");
 
 function valSecondMax(array){
 
-    let biggestN = array[0];
+    let n1 = 0;
+    let n2 = 0;
 
-    for (let i = 1; i < array.length; i++) {
-        if (array[i] > biggestN) {
-            biggestN = array[i];
-        }
-    }
+    // for (let i = 1; i < array.length; i++) {
+    //     if (array[i] > biggestN) {
+    //         biggestN = array[i];
+    //     }
+    // }
 
-    let result = array[0];
+    // let result = array[0];
 
-    for (let i = 1; i < array.length; i++) {
-        if (array[i] > result && array[i] < biggestN) {
-            result = array[i];
+    // for (let i = 1; i < array.length; i++) {
+    //     if (array[i] > result && array[i] < biggestN) {
+    //         result = array[i];
+    //     }
+    // }
+
+    for (let i = 0; i < array.length; i++) {
+        if(array[i] > n1 && array[i] > n2) {
+            n2 = n1;
+            n1 = array[i];
+        }else if(array[i] > n2){
+            n2 = array[i];
         }
     }
     
-    return result;
+    return n2;
 }
 
-console.log(valSecondMax([2, 45, 35, 78, 54]));
+console.log(valSecondMax([2, 67, 45, 35, 53, 55, 3, 67, 59]));
 
 // Écrire une fonction qui prend en entrée un tableau et un nombre et qui retourne le nombre de fois que ce nombre apparaît dans le tableau.
 
