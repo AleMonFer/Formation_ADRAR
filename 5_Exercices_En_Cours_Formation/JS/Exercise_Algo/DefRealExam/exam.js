@@ -19,15 +19,15 @@
 /* Question 4 */
 
 let a = 5;
-let b = a*2;
+let b = a * 2;
 
 console.log(a + b);
 
 /* Question 5 */
 
- let fakea = a;
- a = b;
- b = fakea;
+let fakea = a;
+a = b;
+b = fakea;
 
 
 
@@ -39,7 +39,7 @@ console.log(a + b);
 
 /* Question 7 */
 
-for(let i = 0; i < 27; i++){
+for (let i = 0; i < 27; i++) {
     console.log("Il ne faut pas tricher !");
 }
 
@@ -53,8 +53,8 @@ for(let i = 0; i < 27; i++){
 
 /* Question 9 */
 
-for(let i = 1; i < 4; i++){
-    for(let j = 7; i < 10; j++){
+for (let i = 1; i < 4; i++) {
+    for (let j = 7; j < 10; j++) {
         console.log(i + " et " + j);
     }
 }
@@ -68,9 +68,9 @@ for(let i = 1; i < 4; i++){
 
 let c = 42;
 
-if(c > 20){
+if (c > 20) {
     console.log("C'est Grand !");
-} else if (c == 20){
+} else if (c == 20) {
     console.log("20 tout pile !");
 } else {
     console.log("C'est petit !");
@@ -107,7 +107,7 @@ if(c > 20){
 
 /* Question 17 */
 
-function f1(num){
+function f1(num) {
     num *= -1;
     return num;
 }
@@ -116,10 +116,10 @@ console.log(f1(5));
 
 /* Question 18 */
 
-function f2(num1, num2){
+function f2(num1, num2) {
     num1 = f1(num1);
     num2 = f1(num2);
-    return f1(num1+num2);
+    return f1(num1 + num2);
 }
 
 console.log(f2(5, 7));
@@ -131,7 +131,7 @@ console.log(f2(5, 7));
 
 /* Question 20 */
 
-let t = [1, 2, 3, 4, 5, 6 ,7 ,8, 9, 10];
+let t = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
 /* Question 21 */
 
@@ -151,7 +151,7 @@ let t = [1, 2, 3, 4, 5, 6 ,7 ,8, 9, 10];
 
 /* Question 25 */
 
-for(let i = 0; i < t.length; i++){
+for (let i = 0; i < t.length; i++) {
     console.log(t[i]);
 }
 
@@ -167,7 +167,7 @@ let weekDays = ["Lundi", "Mardi", "Mercredi", "Jeudi", "Vendredi", "Samedi", "Di
 
 /* Question 28 */
 
-function nameOfDay(n){
+function nameOfDay(n) {
     return weekDays[n];
 }
 
@@ -201,14 +201,14 @@ function nameOfDay(n){
 
 /* Question 29 */
 
-function isLeapYear(year){
-    if(year%400 == 0 || year%4 == 0 && year%100 != 0){
+function isLeapYear(year) {
+    if (year % 400 == 0 || year % 4 == 0 && year % 100 != 0) {
         return true;
     }
     return false;
 }
 
- isLeapYear(2021);
- isLeapYear(2020);
- isLeapYear(2000);
- isLeapYear(1900);
+console.log(isLeapYear(2021));
+console.log(isLeapYear(2020));
+console.log(isLeapYear(2000));
+console.log(isLeapYear(1900));
