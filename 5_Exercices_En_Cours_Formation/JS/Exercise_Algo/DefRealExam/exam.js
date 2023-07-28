@@ -159,7 +159,7 @@ for (let i = 0; i < t.length; i++) {
 
 /* Question 26 */
 
-let weekDays = ["Lundi", "Mardi", "Mercredi", "Jeudi", "Vendredi", "Samedi", "Dimanche"];
+//let weekDays = ["Lundi", "Mardi", "Mercredi", "Jeudi", "Vendredi", "Samedi", "Dimanche"];
 
 /* Question 27 */
 
@@ -168,8 +168,10 @@ let weekDays = ["Lundi", "Mardi", "Mercredi", "Jeudi", "Vendredi", "Samedi", "Di
 /* Question 28 */
 
 function nameOfDay(n) {
+    let weekDays = ["Lundi", "Mardi", "Mercredi", "Jeudi", "Vendredi", "Samedi", "Dimanche"];
     return weekDays[n];
 }
+
 
 /* Années Bissextilles */
 
@@ -199,7 +201,7 @@ function nameOfDay(n) {
 
 // 2021  n'est pas bissextile car elle n'est ni multiple de 400, ni multiple de 4
 
-/* Question 29 */
+/* Question 30 */
 
 function isLeapYear(year) {
     if (year % 400 == 0 || year % 4 == 0 && year % 100 != 0) {
@@ -212,3 +214,100 @@ console.log(isLeapYear(2021));
 console.log(isLeapYear(2020));
 console.log(isLeapYear(2000));
 console.log(isLeapYear(1900));
+
+/* Question 31 */
+
+function nbOfDaysBetweenYears(year1, year2) {
+    let nbOfDays = 0;
+    for (let i = year1; i <= year2; i++) {
+        if (isLeapYear(i) == true) {
+            nbOfDays += 366;
+        } else {
+            nbOfDays += 365;
+        }
+    }
+    return nbOfDays;
+}
+
+console.log(nbOfDaysBetweenYears(2021, 2021));
+console.log(nbOfDaysBetweenYears(2020, 2021));
+console.log(nbOfDaysBetweenYears(2000, 2021));
+
+/* Question 32 */
+
+function nbOfDaysInYear(year) {
+    let daysinMonths = [];
+    if (isLeapYear(year) == true) {
+        daysinMonths = [31, 29, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
+    } else {
+        daysinMonths = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
+    }
+
+    return daysinMonths;
+}
+
+console.log(nbOfDaysInYear(2021));
+
+/* Question 33 */
+
+function numOfMonth(month) {
+    let monthsinYear = ["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre", "décembre"];
+    for (let i = 0; i < monthsinYear.length; i++) {
+        if (monthsinYear[i] == month) {
+            return i;
+        }
+    }
+}
+
+console.log(numOfMonth("novembre"));
+
+/* Question 34 */
+
+//10
+
+/* Question 35 */
+
+// let days = 0;
+// let months = nbOfDaysInYear(2021); 
+// for(let i = 0; i < numOfMonth("novembre"); i++){
+//     days += months[i]; 
+// }
+// days += 8;
+// console.log(days);
+
+/* Question 36 */
+
+function nbOfDaysSinceNewYear(day, month, year) {
+
+    let days = 0;
+    let months = nbOfDaysInYear(year);
+
+    for (let i = 0; i < numOfMonth(month); i++) {
+        days += months[i];
+    }
+
+    days += day;
+
+    return days;
+
+}
+
+/* Question 37 */
+
+console.log(nbOfDaysSinceNewYear(23,"juin", 1912));
+
+//175
+
+console.log(nbOfDaysBetweenYears(1912, 2020));
+
+//39813
+
+console.log(nbOfDaysSinceNewYear(8,"novembre",2021));
+
+//312
+
+/* Question 38 */
+
+//39813 - 175 + 312 = 39950
+
+/* Question 38 */
