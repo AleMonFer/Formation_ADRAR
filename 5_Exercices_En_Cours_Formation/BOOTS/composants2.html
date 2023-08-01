@@ -1,0 +1,152 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Composants2</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+</head>
+
+<body>
+    <h1>composants 2</h1>
+    <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary border-top border-bottom">
+            <span class="navbar-brand mb-0 h1">Mon Super Menu</span>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link text-secondary active" aria-current="page" href="#">Accueil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-secondary" href="#">Menu 1</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link text-secondary dropdown-toggle" href="#" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Menu Déroulant
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Sous menu 1</a></li>
+                            <li><a class="dropdown-item" href="#">Sous menu 2</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb pt-3">
+                <li class="breadcrumb-item"><a href="#">Accueil</a></li>
+                <li class="breadcrumb-item"><a href="#">Menu 1</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Menu 2</li>
+            </ol>
+        </nav>
+
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="https://picsum.photos/800/300?random1" class="d-block w-100"
+                        alt="https://picsum.photos/800/300?random1">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://picsum.photos/800/300?random2" class="d-block w-100"
+                        alt="https://picsum.photos/800/300?random2">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://picsum.photos/800/300?random3" class="d-block w-100"
+                        alt="https://picsum.photos/800/300?random3">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+        <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        Mon Texte 1
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <div class="row">
+                            <div class="col-sm-12 col-md-3">
+                                <img src="https://picsum.photos/400?random4" class="d-block w-100"
+                                    alt="https://picsum.photos/400?random4">
+                            </div>
+                            <div class="col-sm-12 col-md-9">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa aperiam qui ea
+                                    inventore, nam
+                                    unde quos minus perferendis ut cum, architecto deleniti tenetur ipsam repudiandae
+                                    error
+                                    laudantium sint temporibus eos veritatis enim praesentium tempore. Fuga officiis
+                                    quod harum.
+                                    Culpa veritatis voluptatibus in ipsa quos accusantium. Vel in saepe veritatis
+                                    tempore Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde iure dolores
+                                    eum, rerum eligendi aliquam voluptas quidem consectetur temporibus quae soluta esse
+                                    voluptates voluptate officiis veritatis modi libero tempora nobis nihil tenetur
+                                    fugiat quibusdam. Ullam natus similique alias autem ipsum vel perferendis placeat et
+                                    facere ex consequuntur, temporibus sequi dolorum, reiciendis quaerat voluptatibus.
+                                    Minus reiciendis quam aliquam pariatur quos quasi, unde eaque dicta consectetur
+                                    nihil, perferendis numquam nam accusamus ullam voluptates porro hic tempore officia
+                                    recusandae? Alias totam ratione laudantium quod veritatis unde ab rem saepe
+                                    molestiae, voluptatibus non culpa reiciendis est similique suscipit. Quia velit
+                                    quos, accusantium tempore aliquid laboriosam maxime veritatis pariatur explicabo
+                                    reprehenderit sint quae autem quod, corporis, tempora quidem dignissimos at odit
+                                    deserunt aspernatur beatae harum. Tempore nam vel consequatur tenetur at ab, ut
+                                    nulla explicabo assumenda est. Odit similique accusamus voluptates reiciendis.
+                                    Voluptatum, ex laborum ipsa provident voluptatibus doloremque sed excepturi fuga ea,
+                                    eius quis?</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <ul class="nav justify-content-center border-top border-bottom">
+            <li class="nav-item">
+                <a class="nav-link text-secondary" href="#">Accueil</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-secondary" href="#">Menu 1</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-secondary" href="#">Menu 2</a>
+            </li>
+        </ul>
+        <footer class="text-center text-secondary py-3">
+            <p>@ 2023 ADRAR Compagny, Inc</p>
+        </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
