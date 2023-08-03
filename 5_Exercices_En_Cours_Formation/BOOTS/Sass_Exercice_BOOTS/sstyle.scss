@@ -1,0 +1,38 @@
+$bg-color: black;
+$textColor: lightblue;
+$textHover: black;
+$bg-hover:antiquewhite;
+$border-size: solid $textColor 5px;
+
+#nestingTest {
+    height: 25vh;
+    background-color: $bg-color;
+    border: $border-size;
+    p {
+        color: $textColor;   
+    }
+}
+
+#nestingTest:hover {
+    background-color: $bg-hover;
+    p {
+        color: $textHover;   
+    }
+}
+
+#app{
+    p{
+        color: $textColor;
+    }
+
+    h1{
+        color: $textColor;
+        background-color: $bg-color;
+        border: $border-size;
+    }
+
+    h1:hover{
+        color: $textHover;
+        background-color: $bg-hover;
+    }
+}

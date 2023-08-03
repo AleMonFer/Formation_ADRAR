@@ -1,0 +1,33 @@
+#nestingTest {
+  height: 25vh;
+  background-color: black;
+  border: solid lightblue 5px;
+}
+
+#nestingTest p {
+  color: lightblue;
+}
+
+#nestingTest:hover {
+  background-color: antiquewhite;
+}
+
+#nestingTest:hover p {
+  color: black;
+}
+
+#app p {
+  color: lightblue;
+}
+
+#app h1 {
+  color: lightblue;
+  background-color: black;
+  border: solid lightblue 5px;
+}
+
+#app h1:hover {
+  color: black;
+  background-color: antiquewhite;
+}
+/*# sourceMappingURL=sstyle.css.map */
